@@ -65,13 +65,23 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .items > p {
+    margin-bottom: 35vh;
+  }
+
+  .items > h4 {
+    margin-top: 10vh;
+  }
+}
+
 @media only screen and (max-width: 645px) {
   .items__buttons {
     display: flex;
     flex-direction: column;
   }
   .items > p {
-    margin-bottom: 40vh;
+    margin-bottom: 30vh;
   }
 
   .items > h4 {
@@ -86,7 +96,7 @@
   }
 
   .items > p {
-    margin-bottom: 45vh;
+    margin-bottom: 38vh;
   }
 
   .items > h4 {
