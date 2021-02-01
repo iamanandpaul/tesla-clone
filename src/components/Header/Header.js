@@ -9,9 +9,9 @@ function Header() {
 
   return (
     <div className="header">
-      <div className="header__logo">
+      <div>
         <a href="#">
-          <img src={logo} alt="tesla" />
+          <img className="header__logo" src={logo} alt="tesla" />
         </a>
       </div>
       <ul className={click ? "header__center active" : "header__center"}>
