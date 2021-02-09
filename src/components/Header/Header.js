@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/teslaLogoSmall.svg";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [click, setClick] = useState(false);
@@ -10,34 +11,34 @@ function Header() {
   return (
     <div className="header">
       <div>
-        <a href="#">
+        <Link to="/">
           <img className="header__logo" src={logo} alt="tesla" />
-        </a>
+        </Link>
       </div>
       <ul className={click ? "header__center active" : "header__center"}>
         <li className="header__options" onClick={closeMobileMenu}>
           {" "}
-          <a href="#">model s</a>
+          <Link to="/">model s</Link>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
           {" "}
-          <a href="#">model 3</a>
+          <Link to="/">model 3</Link>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
           {" "}
-          <a href="#">model x</a>
+          <Link to="/">model x</Link>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
           {" "}
-          <a href="#">model y</a>
+          <Link to="/">model y</Link>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
           {" "}
-          <a href="#">solar roof</a>
+          <Link to="/">solar roof</Link>
         </li>
         <li className="header__options" onClick={closeMobileMenu}>
           {" "}
-          <a href="#">solar panels</a>
+          <Link to="/">solar panels</Link>
         </li>
       </ul>
 
@@ -46,10 +47,10 @@ function Header() {
           className={click ? "header__rightitems active" : "header__rightitems"}
         >
           <li className="header__options" onClick={closeMobileMenu}>
-            <a href="#">shop</a>{" "}
+            <Link to="/">shop</Link>{" "}
           </li>
           <li className="header__options" onClick={closeMobileMenu}>
-            <a href="#">tesla account</a>
+            <Link to="/">tesla account</Link>
           </li>
         </ul>
         <div className="header__click" onClick={handleClick}>

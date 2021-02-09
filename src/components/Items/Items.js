@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Button/Button";
 import "./Items.css";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link } from "react-router-dom";
 
 function Items({
   title,
@@ -19,7 +20,7 @@ function Items({
       <h4>{title}</h4>
       <p>
         {desc}
-        <a href="">{main}</a>
+        <Link to="/">{main}</Link>
       </p>
       <div className="items__buttons">
         <Button title={leftbtn} />
